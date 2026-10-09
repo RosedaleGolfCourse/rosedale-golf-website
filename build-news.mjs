@@ -21,6 +21,7 @@ function bodyHtml(body) {
 await mkdir(out,{recursive:true});
 const home = await readFile('index.html','utf8');
 await copyFile('logo.png',path.join(out,'logo.png'));
+await copyFile('rosedale-course-map-clean.png',path.join(out,'rosedale-course-map-clean.png'));
 let articles = [];
 try {
   const files = await readdir('content/news');
