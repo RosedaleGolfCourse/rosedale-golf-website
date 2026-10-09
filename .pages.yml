@@ -1,0 +1,22 @@
+
+media:
+  input: media
+  output: /media
+
+content:
+  - name: news
+    label: Club News & Updates
+    type: collection
+    path: content/news
+    filename: "{primary}.md"
+    fields:
+      - name: title
+        label: Update Title
+        type: string
+        required: true
+      - name: date
+        label: Date
+        type: date
+      - name: body
+        label: News or Update
+        type: rich-text
